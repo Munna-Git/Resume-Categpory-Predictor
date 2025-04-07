@@ -115,6 +115,12 @@ So, back to Jupyter I went, properly saved my model, TF-IDF vectorizer, and enco
 
 ✨ It worked!
 
+## Project flow
+I have just attached the ML model in this repository. If you want to run the entire project you can do so by accesing it in my another repository. The below attached is my GitHub repository for the model with:
+
+https://github.com/Munna-Git/Resume_Screening_project.git
+
+
 
 ## Future Enhancements
 🧠 Integrate Named Entity Recognition (NER) for skill extraction from resumes.
@@ -126,6 +132,13 @@ So, back to Jupyter I went, properly saved my model, TF-IDF vectorizer, and enco
 📥 Include a downloadable report summarizing prediction.
 
 📈 Update the app.py file to actually map the suggested skills to the skills in the resume and  more enhancements can be made.
+
+
+## The app access:
+https://resumescreeningproject-bhuvgu26wqgjh39kujyzhp.streamlit.app/
+
+Please let me know if the app is not working, because it goes into sleep mode because of inactivity.
+
 
 Author: Munna
 

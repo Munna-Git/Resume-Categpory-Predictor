@@ -77,8 +77,31 @@ The *skills_mapping* dictionary maps each predicted category to a curated list o
 
 - Reusable ML artifacts (.pkl files)
 
-## Challenges Faced During Deployment (Streamlit)
-The first challenge was asking "How to make this available to others?". googled and found out few options first was streamlit....ok...ran my code in jupyter notebook. not aware of the all the required files needed to create. 
+## ⚙️ Challenges Faced During Deployment
+Ah, deployment — the stage where dreams meet documentation and reality bites. 😅
+So there I was, having built this near-perfect ML model, proud of my 99.48% accuracy, and then came the big question:
+**“How do I make this available to others?”**
+Naturally, I asked the wisest sage of our time, Google. It gave me few options and i chose to proceed with Streamlit. Sounds simple enough, right?
+I confidently ran my model in Jupyter Notebook. Worked well. But when it came to turning this into an actual web app, I was hit with terms like .pkl, requirements.txt, virtual environments, a whole new ecosystem I didn’t sign up for (or so I thought).
+First, I made a requirements.txt file. But it was just... a text file. I stared at it thinking, **“How is a .txt file supposed to make anything run?”** 😂 I had written the required libraries in there, so I figured the .pkl files probably needed some writing too. So what did I do? I copied my code and pasted it inside empty .pkl files - yes, literally. Rookie move, I know.
+Next up: deployment on Streamlit. I gave it a go... and boom - error. Something about the .pkl files. I turned to more tutorials, and surprise - now I had five tabs open and ten different versions of advice. Still confused.
+Then I thought, maybe it’s not Streamlit’s fault. Let’s try Netlify. Switched to that, only to realize: Netlify is for static sites and my ML model needed backend logic to function. Dead end. Again.
+By now, my code was turning into a mini jungle - more snippets piling up with every tutorial watched and resources referred.
+Finally I decided to ask one of my lecturers, showed her the model, and she patiently walked me through the process. And behold — she got it working on Streamlit. At that moment, I was relieved and very convinced this could work after all. 😌
+We had a great one-hour conversation about ML, deployment, and best practices, and here's what I finally understood:
+1.	Create a virtual environment
+python -m venv venv
+2.	Activate the environment
+.\venv\Scripts\activate
+3.	Install requirements
+pip install -r requirements.txt
+➡️ This is when I finally understood what that .txt file was doing.
+4.	Run the app
+streamlit run app.py
+But wait... did it run without errors? Of course not. 😂
+Turns out, the .pkl files I had dragged and dropped from VS Code were empty. I’d been dead set on using VS Code without realizing I needed to export the actual trained model from Jupyter and save it as a pickle file - not just create a blank one like a Word doc.
+So, back to Jupyter I went, properly saved my model, TF-IDF vectorizer, and encoder as .pkl files, repeated the venv setup, and finally...
+✨ It worked!
 
 
 ## Future Enhancements
@@ -90,7 +113,7 @@ The first challenge was asking "How to make this available to others?". googled 
 
 📥 Include a downloadable report summarizing prediction.
 
-📈 Update the app.py file to actually map the suggested skills to the skills in the resume.
+📈 Update the app.py file to actually map the suggested skills to the skills in the resume and  more enhancements can be made.
 
 Author: Munna
 

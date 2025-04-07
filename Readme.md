@@ -3,7 +3,9 @@
 This project is an NLP-powered resume categorization system that classifies resumes into predefined job categories and recommends top relevant skills for that role. Built using Python and machine learning techniques, it serves as a foundational tool for automating candidate evaluation in HR tech and recruitment systems.
 
 **✅ Model Accuracy: 99.48%**
+
 **🎯 Model Type: Logistic Regression with TF-IDF**
+
 **📄 Input Formats Supported: .pdf, .txt, .doc, .docx**
 
 ## **Problem Statement**
@@ -75,6 +77,10 @@ The *skills_mapping* dictionary maps each predicted category to a curated list o
 
 - Reusable ML artifacts (.pkl files)
 
+## Challenges Faced During Deployment (Streamlit)
+The first challenge was asking "How to make this available to others?". googled and found out few options first was streamlit....ok...ran my code in jupyter notebook. not aware of the all the required files needed to create. 
+
+
 ## Future Enhancements
 🧠 Integrate Named Entity Recognition (NER) for skill extraction from resumes.
 
@@ -87,5 +93,5 @@ The *skills_mapping* dictionary maps each predicted category to a curated list o
 📈 Update the app.py file to actually map the suggested skills to the skills in the resume.
 
 Author: Munna
-📞 Contact
-🔗 [LinkedIn](http://linkedin.com/in/munna-a4ab07253)
+
+📞 Contact 🔗 [LinkedIn](http://linkedin.com/in/munna-a4ab07253)

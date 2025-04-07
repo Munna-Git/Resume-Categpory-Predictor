@@ -116,7 +116,7 @@ So, back to Jupyter I went, properly saved my model, TF-IDF vectorizer, and enco
 ✨ It worked!
 
 ## Project flow
-I have just attached the ML model in this repository. If you want to run the entire project you can do so by accesing it in my another repository. The below attached is my GitHub repository for the model with:
+I have just attached the ML model in this repository. If you want to run the entire project you can do so by accesing it in my another repository. The below attached is my GitHub repository for the model:
 
 https://github.com/Munna-Git/Resume_Screening_project.git
 
